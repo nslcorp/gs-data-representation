@@ -11,11 +11,10 @@ const Header = () => {
           </svg>
           <span className="ml-3 text-xl">Web App</span>
         </Link>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-          <Link href="/page1" className="mr-5 hover:text-gray-900">Page 1</Link>
-          <Link href="/page2" className="mr-5 hover:text-gray-900">Page 2</Link>
-          <Link href="/page2"></Link>
-        </nav>
+        {/*<nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">*/}
+        {/*  <Link href="/page1" className="mr-5 hover:text-gray-900">Page 1</Link>*/}
+        {/*  <Link href="/page2" className="mr-5 hover:text-gray-900">Page 2</Link>*/}
+        {/*</nav>*/}
       </div>
     </header>
   );
