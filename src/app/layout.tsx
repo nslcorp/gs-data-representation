@@ -28,7 +28,7 @@ export default function RootLayout({
               components: {
                 Form: {
                   /* here is your component tokens */
-                  itemMarginBottom: 10
+                  itemMarginBottom: 16
                 },
               },
             }}

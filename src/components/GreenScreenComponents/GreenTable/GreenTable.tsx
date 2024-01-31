@@ -1,13 +1,11 @@
 'use client';
-import { columns } from '@/app/(main-page)/GreenScreenTable/GreenScreenTable.config';
-import { data } from "@/app/(main-page)/GreenScreenTable.mock";
 import React from 'react';
 import { DatePicker, Table } from 'antd';
 import dayjs from 'dayjs';
+import { tableMock } from '@/components/GreenScreenComponents/mocks/tableMock';
+import { columns } from '@/components/GreenScreenComponents/GreenTable/GreenTable.config';
 
-
-
-const GreenScreenTable = () => {
+const GreenTable = () => {
   return (
     <div>
       <div>
@@ -17,11 +15,10 @@ const GreenScreenTable = () => {
           <span className="text-lg text-gray-900 colo ml-2 mr-2">to</span>
           <DatePicker format="MM/DD/YYYY" defaultValue={dayjs('2024/01/29')} />
         </div>
-
       </div>
-      <Table size="small" columns={columns} dataSource={data} />
+      <Table size="small" columns={columns} dataSource={tableMock} />
     </div>
   );
 };
 
-export default GreenScreenTable;
+export default GreenTable;

@@ -1,6 +1,6 @@
-import { TableRecord } from "@/app/(main-page)/GreenScreenTable/GreenScreenTable.config";
+import { TableRecord } from "@/types";
 
-export const data: TableRecord[] = [
+export const tableMock: TableRecord[] = [
   {
     sel: 1,
     order: 470000016,
