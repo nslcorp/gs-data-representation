@@ -1,6 +1,6 @@
 'use client';
 import { columns } from '@/app/(main-page)/GreenScreenTable/GreenScreenTable.config';
-import { data } from "@/app/(main-page)/GreenScreenTable/GreenScreenTable.mock";
+import { data } from "@/app/(main-page)/GreenScreenTable.mock";
 import React from 'react';
 import { DatePicker, Table } from 'antd';
 import dayjs from 'dayjs';

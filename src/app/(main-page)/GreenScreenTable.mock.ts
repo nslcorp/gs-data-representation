@@ -24,7 +24,7 @@ export const data: TableRecord[] = [
     order: 470000096,
     tran: 'BUY',
     qty: '.0000',
-    symbol: 'PRTMX',
+    symbol: 'VEU',
     price: 2902.88,
     orderStatus: 'UNEXPECTED, OPEN',
 

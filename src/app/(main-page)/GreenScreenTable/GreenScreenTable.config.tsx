@@ -1,4 +1,5 @@
 import { Space, TableProps, Tag } from 'antd';
+import Link from "next/link";
 import React from 'react';
 
 export interface TableRecord {
@@ -67,6 +68,7 @@ export const columns: TableProps<TableRecord>['columns'] = [
   {
     title: 'CUSTOMER NAME',
     dataIndex: 'customerName',
+    render: (text, data) => <Link href={`/theorder/${data.sel}`}>{text}</Link>,
   },
   {
     title: 'EXCHANGE',
