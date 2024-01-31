@@ -4,6 +4,7 @@ const nextConfig = {
   // basePath: "/gs-data-representation",
   // images: { unoptimized: true }
   reactStrictMode: true,
+  assetPrefix: '/'
 };
 
 export default nextConfig;
