@@ -1,11 +1,15 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { DatePicker, Table } from 'antd';
 import dayjs from 'dayjs';
 import { tableMock } from '@/components/GreenScreenComponents/mocks/tableMock';
-import { columns } from '@/components/GreenScreenComponents/GreenTable/GreenTable.config';
+import { getColumns } from '@/components/GreenScreenComponents/GreenTable/GreenTable.config';
 
-const GreenTable = () => {
+interface GreenTableProps {
+  onShowModalEdit: (data: any) => void;
+}
+
+const GreenTable = (props: GreenTableProps) => {
   return (
     <div>
       <div>
@@ -16,7 +20,11 @@ const GreenTable = () => {
           <DatePicker format="MM/DD/YYYY" defaultValue={dayjs('2024/01/29')} />
         </div>
       </div>
-      <Table size="small" columns={columns} dataSource={tableMock} />
+      <Table
+        size="small"
+        columns={getColumns({ onShowModalEdit: props.onShowModalEdit })}
+        dataSource={tableMock}
+      />
     </div>
   );
 };

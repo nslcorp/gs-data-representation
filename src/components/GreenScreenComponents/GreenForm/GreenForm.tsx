@@ -7,6 +7,10 @@ import { TableRecord } from '@/types';
 
 interface OrderFormProps {
   knownReusableData: TableRecord | {};
+  formStyles?: {
+    height?: number;
+  };
+  hideFormControls?: boolean;
 }
 
 const GreenForm = (props: OrderFormProps) => {
@@ -22,13 +26,14 @@ const GreenForm = (props: OrderFormProps) => {
     ...sharedForAllFormsInitData,
   };
 
+  const { formStyles } = props;
   return (
     <Form
       form={form}
       layout="horizontal"
       initialValues={data}
       requiredMark="optional"
-      style={{ maxWidth: 800 }}
+      style={{ maxWidth: 800, height: formStyles?.height, overflow: 'auto' }}
       labelCol={{ span: 10 }}
     >
       {formFields.map((record) => {
@@ -37,7 +42,7 @@ const GreenForm = (props: OrderFormProps) => {
           formInputElement = <Input.TextArea showCount maxLength={100} readOnly={record.readonly} />;
         }
 
-        const isRequired = record.readonly || record.required
+        const isRequired = record.readonly || record.required;
         return (
           <Form.Item
             key={record.name}
@@ -50,10 +55,11 @@ const GreenForm = (props: OrderFormProps) => {
           </Form.Item>
         );
       })}
-
-      <Form.Item>
-        <Button type="primary">Submit</Button>
-      </Form.Item>
+      {!props.hideFormControls && (
+        <Form.Item>
+          <Button type="primary">Submit</Button>
+        </Form.Item>
+      )}
     </Form>
   );
 };
