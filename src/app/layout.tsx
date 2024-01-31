@@ -1,3 +1,4 @@
+import { appName } from "@/(config)/constants";
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
@@ -10,7 +11,7 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Web App',
+  title: appName,
   description: 'Data representation',
 };
 

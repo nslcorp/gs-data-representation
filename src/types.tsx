@@ -7,11 +7,11 @@ export interface TableRecord {
   tran: string;
   qty?: string;
   symbol?: string;
-  price?: number;
-  orderStatus?: string;
+  price: number;
+  orderStatus?: "Open" | 'Close' | 'In-Progress'| 'Filled';
 
   branchAccount: string;
-  ir?: string;
+  ir: number;
   issue?: string;
   activeTime?: string;
 

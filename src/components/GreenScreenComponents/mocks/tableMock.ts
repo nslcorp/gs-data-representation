@@ -8,10 +8,10 @@ export const tableMock: TableRecord[] = [
     qty: '.0000',
     symbol: 'PRTMX',
     price: 86.57,
-    orderStatus: 'Unexpected, Open',
+    orderStatus: 'Open',
 
     branchAccount: '111-1234-1-1',
-    ir: '310002',
+    ir: 310002,
     issue: 'TRP SUMMIT MUNICIPAL INTERM I',
     activeTime: '01/27 03:00',
 
@@ -29,7 +29,7 @@ export const tableMock: TableRecord[] = [
     orderStatus: 'Filled',
 
     branchAccount: '111-1234-1-1',
-    ir: '310002',
+    ir: 310002,
     issue: 'TRP SUMMIT MUNICIPAL INTERM I',
     activeTime: '01/27 03:00',
 
@@ -47,7 +47,7 @@ export const tableMock: TableRecord[] = [
     orderStatus: 'Open',
 
     branchAccount: '111-1234-1-1',
-    ir: '490007',
+    ir: 490007,
     issue: 'TRP SUMMIT MUNICIPAL INTERM I',
     activeTime: '01/27 02:58',
 

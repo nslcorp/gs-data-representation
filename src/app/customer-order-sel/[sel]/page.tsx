@@ -1,8 +1,15 @@
+import { appName } from "@/(config)/constants";
 import { tableMock } from '@/components/GreenScreenComponents/mocks/tableMock';
 import GreenForm from '@/components/GreenScreenComponents/GreenForm/GreenForm';
+import { Metadata } from "next";
 import React from 'react';
 
 // export const dynamicParams = false
+
+export const metadata: Metadata = {
+  title: `${appName}: Customer Order`,
+  description: 'Data representation',
+};
 
 export async function generateStaticParams() {
   return tableMock.map((record) => {
