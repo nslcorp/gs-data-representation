@@ -8,8 +8,8 @@ const OrderPage1 = () => {
 
   return (
     <div className="flex justify-center w-full">
-      {/*<h1>Header</h1>*/}
-      <OrderForm/>
+      <h1>Header</h1>
+      {/*<OrderForm />*/}
     </div>
   )
 };

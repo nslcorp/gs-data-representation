@@ -8,7 +8,7 @@ export const data: TableRecord[] = [
     qty: '.0000',
     symbol: 'PRTMX',
     price: 86.57,
-    orderStatus: 'UNEXPECTED, OPEN',
+    orderStatus: 'Unexpected, Open',
 
     branchAccount: '111-1234-1-1',
     ir: '310002',
@@ -26,7 +26,7 @@ export const data: TableRecord[] = [
     qty: '.0000',
     symbol: 'VEU',
     price: 2902.88,
-    orderStatus: 'UNEXPECTED, OPEN',
+    orderStatus: 'Filled',
 
     branchAccount: '111-1234-1-1',
     ir: '310002',
@@ -44,7 +44,7 @@ export const data: TableRecord[] = [
     qty: '.0000',
     symbol: 'PRTMX',
     price: 402.67,
-    orderStatus: 'UNEXPECTED, OPEN',
+    orderStatus: 'Open',
 
     branchAccount: '111-1234-1-1',
     ir: '490007',
